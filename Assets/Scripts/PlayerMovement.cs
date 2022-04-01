@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        //Grab references from object               matt bad
+        //Grab references from object
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
     {
         body.velocity = new Vector2(body.velocity.x, speed);
         anim.SetTrigger("Jump");
-        
+
     }
     
     private void OnCollisionEnter2D(Collision2D collision)
@@ -58,7 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool onWall()
     {
-        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2.(transform.localScale.x, 0), 0.1f, wallLayer);
+        RaycastHit2D raycastHit = Physics2D.BoxCast(boxCollider.bounds.center, boxCollider.bounds.size, 0, new Vector2(transform.localScale.x, 0), 0.1f, wallLayer);
         return raycastHit.collider != null;
     }
 }

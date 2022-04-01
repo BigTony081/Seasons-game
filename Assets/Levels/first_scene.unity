@@ -268,7 +268,10 @@ MonoBehaviour:
   speed: 10
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!50 &1245665331
 Rigidbody2D:
   serializedVersion: 4
@@ -375,7 +378,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245665329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.07, y: 0.29, z: 0}
+  m_LocalPosition: {x: -2.64, y: -2.17, z: 0}
   m_LocalScale: {x: 7, y: 7, z: 6}
   m_Children: []
   m_Father: {fileID: 0}
